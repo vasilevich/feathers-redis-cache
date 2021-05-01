@@ -1,5 +1,5 @@
 {
-  "name": "feathers-redis-cache",
+  "name": "@yosefsolutions/feathers-redis-cache",
   "description": "Redis cache for feathers service",
   "version": "1.2.0",
   "homepage": "git://github.com/sarkistlt/feathers-redis-cache",
