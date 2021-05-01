@@ -34,7 +34,7 @@ exports.default = (function (options) {
                     console.log(chalk_1.default.yellow('[redis]') + " not connected");
                     return retryInterval;
                 } });
-            var client_1 = redis_1.default.createClient(redisOptions);
+            var client_1 = app.get('redisClient') || redis_1.default.createClient(redisOptions);
             app.set('redisClient', client_1);
             client_1.on('ready', function () {
                 app.set('redisClient', client_1);

@@ -29,7 +29,7 @@ export default (options: any = {}) => {
           return retryInterval;
         }
       };
-      const client = redis.createClient(redisOptions);
+      const client = app.get('redisClient') || redis.createClient(redisOptions);
 
       app.set('redisClient', client);
 
